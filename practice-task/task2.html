@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Second Task</title>
+    <style>
+        .container{
+           border: 2px solid green;
+           display: grid;
+           grid-template-columns: repeat(3, 1fr) ;
+        }
+
+        .box1{
+        text-align: left;
+        width: 35%;
+        height: 42vh;
+        padding-right: 30px;
+        padding-left: 10px;
+        background-color: crimson;
+        margin-bottom: 50px;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        }
+
+        .box2{
+        text-align: left;
+        width: 58%;
+        height: 35vh;
+        padding-right: 30px;
+        padding-left: 10px;
+        background-color: orange;
+        margin-bottom: 50px;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        }
+
+        .box3{
+        text-align: left;
+        width: 19%;
+        height: 25vh;
+        padding-right: 30px;
+        padding-left: 10px;
+        background-color: blueviolet;
+        margin-bottom: 50px;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        }
+
+        .box4{
+        text-align: left;
+        width: 19%;
+        height: 25vh;
+        padding-right: 30px;
+        padding-left: 10px;
+        background-color: gray;
+        margin-bottom: 50px;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        }
+
+        @media screen and (max-width: 568px) {
+            .container{
+               display: flex;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+    
+</body>
+</html>
