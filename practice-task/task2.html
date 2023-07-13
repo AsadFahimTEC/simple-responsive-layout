@@ -10,20 +10,35 @@
         }
 
         .box{
-            display: flex;
+            display: grid;
+            grid-template-areas:
+            "box1 box1 box2 box2"
+            "box1 box1 box3 box4";
+        }
+
+        .box1{
+            grid-area: box1;
         }
 
         .box2{
-            display: grid;
+            grid-area: box2;
+        }
+
+        .box3{
+            grid-area: box3;
+        }
+
+        .box4{
+            grid-area: box4;
         }
 
         .box1{
         text-align: left;
-        width: 35%;
-        height: 42vh;
         padding-right: 30px;
         padding-left: 10px;
         background-color: crimson;
+        width: 35%;
+        height: 42vh;
         margin-bottom: 50px;
         color: white;
         font-size: 30px;
@@ -32,12 +47,12 @@
 
         .box2{
         text-align: left;
-        width: 58%;
-        height: 35vh;
         padding-right: 30px;
         padding-left: 10px;
         background-color: orange;
         margin-bottom: 50px;
+        width: 58%;
+        height: 35vh;
         color: white;
         font-size: 30px;
         font-weight: 700;
@@ -45,9 +60,9 @@
 
         .box3{
         text-align: left;
-        width: 19%;
+        width: 45%;
         height: 25vh;
-        padding-right: 30px;
+        padding-right: 35px;
         padding-left: 10px;
         background-color: blueviolet;
         margin-bottom: 50px;
@@ -58,9 +73,9 @@
 
         .box4{
         text-align: left;
-        width: 19%;
+        width: 45%;
         height: 25vh;
-        padding-right: 30px;
+        padding-right: 35px;
         padding-left: 10px;
         background-color: gray;
         margin-bottom: 50px;
@@ -71,11 +86,9 @@
 
         @media screen and (max-width: 568px) {
             .container{
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .box{
-               flex-direction: column;
+            grid-template-areas:
+            "box1 box1 box2 box2"
+            "box1 box1 box3 box4";
             }
             
         }
