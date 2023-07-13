@@ -7,8 +7,14 @@
     <style>
         .container{
            border: 2px solid green;
-           display: grid;
-           grid-template-columns: repeat(3, 1fr) ;
+        }
+
+        .box{
+            display: flex;
+        }
+
+        .box2{
+            display: grid;
         }
 
         .box1{
@@ -65,7 +71,11 @@
 
         @media screen and (max-width: 568px) {
             .container{
-               display: flex;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .box{
+               flex-direction: column;
             }
             
         }
@@ -73,10 +83,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="box1">1</div>
-        <div class="box2">2</div>
-        <div class="box3">3</div>
-        <div class="box4">4</div>
+        <div class="box">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+            <div class="box4">4</div>
+        </div>
     </div>
     
 </body>

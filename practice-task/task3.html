@@ -8,26 +8,41 @@
        
         .container{
              display: flex;
-             flex-wrap: wrap;
-             padding: 0 4px;
          }
  
          .images{
              flex: 25%;
-             max-width: 25%;
-             padding: 0 4px;
+             padding: 5px;
          }
- 
+
          .images img{
-             margin-top: 10px ;
-             vertical-align: 50%;
+            height: 50%;
          }
- 
-         @media screen and(max-width) {
-             .container{
-                 flex: 25%;
-                 max-width: 25%;
-             }   
+    
+            @media screen and (max-width: 576px) {
+            .container{
+              flex-direction: column;
+            } 
+
+
+         }
+
+         @media screen and (min-width: 576px) and (max-width: 768px) {
+            .container{
+                flex-direction: column;
+            } 
+         }
+
+         @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container{
+                flex-direction: column;
+            } 
+         }
+
+         @media screen and (min-width: 576px) and (max-width: 1200px) {
+            .container{
+                flex-direction: column;
+            } 
          }
      </style>
 </head>
@@ -35,9 +50,13 @@
     <h3>Image Responsive</h3>
     <div class="container">
         <div class="images">
-            <img src="/images/healthy.jpg" alt="">
-            <img src="/images/image27-1.png" alt="">
-            <img src="/images/images.jpg" alt="">
+            <img src="/images/healthy.jpg" alt="" width="100%">
+        </div>
+        <div class="images">
+            <img src="/images/image27-1.png" alt="" width="100%">
+        </div>
+        <div class="images">
+            <img src="/images/images.jpg" alt="" width="100%">
         </div>
     </div>
     
