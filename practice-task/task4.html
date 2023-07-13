@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <style>
+
+       .image-container{
+        display: flex;
+        
+       }
+
+       .image-container div{
+            width: 50%;
+        }
+
+        .image-container img{
+            width: 100%;
+        }
+        
+
+        .header{
+            text-align: center;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .text{
+            text-align: center;
+           
+        }
+
+        .btn-primary{
+            color: white;
+            background-color: blueviolet;
+            border: none;
+            gap: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+       
+
+        @media screen and(max-width: 576px) {
+            .image.container{
+                flex-direction: column;
+            }
+
+            .image-container div{
+            width: 100%;
+        }
+ }
+
+       @media screen and(min-width: 576px) and(max-width: 992px) {
+        .image.container{
+                flex-direction: column;
+            }
+
+            .image-container div{
+            width: 100%;
+        }
+ }
+       
+            
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="container">
+            <img src="../images/food.jpg" alt="">
+            <div class="info">
+                <h1 class="header">The Best New Fast Food</h1>
+                <p class="text">Many fast food restaurants frequently release new items to try. These new offerings not only <br> create a buzz around the brand but can also intrigue customers enough to keep coming back. <br> Sometimes, the newest items are not as good as we hoped they'd be (we're looking at you,<br>Dunkin' Breakfast Taco), but other times, they exceed our expectations or at least keep our <br> taste buds satisfied for eveyone to eating those fast food in a week or a month for good health.</p>
+                <button class="btn-primary">Read More</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="../images/food2.jpg" alt="">
+            <div class="info">
+                <h1 class="header">The Best New Fast Food</h1>
+                <p class="text">Many fast food restaurants frequently release new items to try. These new offerings not only <br> create a buzz around the brand but can also intrigue customers enough to keep coming back. <br> Sometimes, the newest items are not as good as we hoped they'd be (we're looking at you,<br>Dunkin' Breakfast Taco), but other times, they exceed our expectations or at least keep our <br> taste buds satisfied for eveyone to eating those fast food in a week or a month for good health.</p>
+                <button class="btn-primary">Read More</button>
+            </div>
+            </div>
+    </div>
+
+
+</body>
+</html>
